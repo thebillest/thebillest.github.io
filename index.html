@@ -1,50 +1,69 @@
 <!DOCTYPE HTML>
-<!-- Greetings visitor! Please, let me know if you have any suggestions on how to improve my code.
+<!--
+	 Greetings visitor! Please, let me know if you have any suggestions on how to improve my code.
      If you happen to like anything you see here, just let me know and I can share it with you.
      Collaboration is the essence of developing and technology!
      - William Alfano, williamalfano@gmail.com 
 -->
 <html>
 	<head>
-		<title>William Alfano</title>
+		<title>hi, i'm william</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-        <link href='https://fonts.googleapis.com/css?family=Lato:200' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="loading">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
-					<header id="header">
-						<h1>William Alfano</h1>
-						<p>Systems Design Engineer</p>
-						<nav>
-							<ul>
-								<li><a href="https://twitter.com/the_billest" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                               					<li><a href="https://www.instagram.com/williamj0hn/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                                				<li><a href="https://www.linkedin.com/in/williamalfano" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                                				<li><a href="https://github.com/thebillest" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
-                                				<!--<li><a href="https://plus.google.com/+name" target="_blank" class="icon fa-google-plus"><span class="label">Google +</span></a></li>-->
-                                				<!--<li><a href="resume.pdf" target="_blank" class="icon fa-file"><span class="label">Resume</span></a></li>-->
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+							<h1>William Alfano</h1>
+							<p align="left">
+							- Embedded Systems Engineer @ lockheed<br>
+							- Software Developer @ home<br>
+							- Human @ reality
+							</p>
+						</header>				
+						<footer>
+							<ul class="icons">
+								<li><a href="https://www.instagram.com/the.billest" class="fa-instagram">Instagram</a></li>
+								<li><a href="https://www.linkedin.com/in/williamalfano" class="fa-linkedin">Linkedin</a></li>
+								<li><a href="https://twitter.com/the_billest" class="fa-twitter">Twitter</a></li>
+								<li><a href="https://www.facebook.com/william.j.alfano" class="fa-facebook">Facebook</a></li>
+								<li><a href="https://open.spotify.com/user/thebillest" class="fa-spotify">Spotify</a></li>
 							</ul>
-						</nav>
-                        <p>Want to learn more? Get in touch with me at <b style="font-weight: 900;">williamalfano@gmail.com</b>.</p>
-					</header>
+							<hr />
+							<ul class="actions">
+								<li><a href="mailto:williamalfano@gmail.com" class="button">e-mail me</a></li>
+							</ul>
+						</footer>
+					</section>
+
+				<!-- Footer -->
 					<footer id="footer">
-                        <span class="copyright">&copy; William Alfano 2016</span>
+						<ul class="copyright">
+							<li>&copy; William Alfano</li><li>Designed in 2018</li>
+						</ul>
 					</footer>
+
 			</div>
-		</div>
-		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-		<script>
-			window.onload = function() { document.body.className = ''; }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
 	</body>
 </html>
