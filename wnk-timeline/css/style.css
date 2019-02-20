@@ -3,7 +3,8 @@ body {
   font-size: 100%;
   line-height: 1.6;
   overflow: hidden;
-  animation: moment-on-body 1s linear 5s;
+  position: fixed;
+  animation: moment-on-body 1s linear 4s;
 	animation-fill-mode: forwards;
 }
 
@@ -378,8 +379,8 @@ iframe {
 }
 
 @keyframes moment-on-body {
-  from {overflow: hidden;} 
-  to {overflow: visible;}
+  from {overflow: hidden; position: fixed;} 
+  to {overflow: visible; position: relative;}
  }
 
 @keyframes moment-off {
