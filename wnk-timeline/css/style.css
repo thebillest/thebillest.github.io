@@ -2,6 +2,9 @@
 body {
   font-size: 100%;
   line-height: 1.6;
+  overflow: hidden;
+  animation: moment-on-body 1s linear 5s;
+	animation-fill-mode: forwards;
 }
 
 .block-content {
@@ -328,6 +331,60 @@ iframe {
 .timeline-list li:nth-child(13) .content {
   -webkit-animation-delay: 8.0s;
           animation-delay: 8.0s;
+}
+
+#splash {
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	
+	animation: moment-on 1s linear 5s;
+	animation-fill-mode: forwards;
+}
+
+#splash_bg {
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	
+	animation: moment-on 1s linear 5s;
+	animation-fill-mode: forwards;
+}
+
+#splash_fg {
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(50%, 50%);
+	position: fixed;
+	top: 20%;
+	left: 0;
+	z-index: 1;
+	
+	animation: moment-on 1s linear 4s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes moment-on {
+ from {opacity: 1;} 
+ 10% {opacity: 0.1;}
+ to {opacity: 0;}
+}
+
+@keyframes moment-on-body {
+  from {overflow: hidden;} 
+  to {overflow: visible;}
+ }
+
+@keyframes moment-off {
+ from {opacity: 0;} 
+ to {opacity: 1;}
 }
 
 @-webkit-keyframes revealFromLeft {
