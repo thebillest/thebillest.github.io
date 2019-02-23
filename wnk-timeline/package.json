@@ -1,0 +1,17 @@
+{
+  "name": "wnk-timeline",
+  "version": "1.0.0",
+  "description": "A pure HTML/CSS/JS implementation of a minimalist, responsive, and animated timeline in celebration of our day.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "browserify dependencies.js > bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^16.2.3",
+    "less": "^3.9.0",
+    "lesshat": "^4.1.0"
+  }
+}
