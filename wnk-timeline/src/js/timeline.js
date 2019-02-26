@@ -83,7 +83,7 @@
 
 						// Get post color
 						var color = post.data('stem-color') ? post.data('stem-color') : null,
-							allColors = 'color-green color-yellow color-white'
+							allColors = 'color-green color-yellow color-white color-blue color-purple color-orange'
 
 						stemWrapper.removeClass(allColors);
 
