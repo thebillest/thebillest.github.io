@@ -14,7 +14,7 @@ for (var i = 0; i < x; i++) {
   stars.push({
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
-    radius: Math.random(),
+    radius: Math.random() + .5,
     vx: Math.floor(Math.random() * 10) - 5,
     vy: Math.floor(Math.random() * 10) - 5
   });

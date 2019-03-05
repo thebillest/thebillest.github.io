@@ -65,14 +65,12 @@ body {
 }
 .profile figcaption a {
   padding: 5px;
-  border: 1px solid #ffffff;
   color: #ffffff;
   font-size: 0.7em;
   text-transform: uppercase;
-  margin: 10px 0;
+  margin: auto;
   display: inline-block;
   opacity: 0.65;
-  width: 47%;
   text-align: center;
   text-decoration: none;
   font-weight: 600;
@@ -90,12 +88,11 @@ body {
   max-width: 90px;
   opacity: 1;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border-width: 3px;
+  border-color: rgb(143, 143, 143);
+  border-style: solid;
 }
-.profile .follow {
-  margin-right: 4%;
-  border-color: #2980b9;
-  color: #2980b9;
-}
+
 .profile h2 {
   margin: 0 0 5px;
   font-weight: 300;
