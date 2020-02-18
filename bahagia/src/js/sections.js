@@ -1,3 +1,4 @@
+var theaterStatus = 0;
 var myFullpage = new fullpage('#fullpage', {
 	//Navigation
 	menu: '#menu',
@@ -65,7 +66,12 @@ var myFullpage = new fullpage('#fullpage', {
 
 	//events
 	onLeave: function(origin, destination, direction){},
-	afterLoad: function(origin, destination, direction){},
+	afterLoad: function(origin, destination, direction){
+		if(destination.index ==  1 && getTheaterStatus() == 0) {
+			setTheaterStatus(1);
+			startTheater();
+		}
+	},
 	afterRender: function(){},
 	afterResize: function(width, height){},
 	afterReBuild: function(){},

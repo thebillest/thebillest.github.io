@@ -59,3 +59,11 @@ function startTheater() {
     // RELIVE IT
     .addScene(theater.replay.bind(theater))
 }
+
+function setTheaterStatus(value) {
+  theaterStatus = value;
+}
+
+function getTheaterStatus() {
+  return theaterStatus;
+}
