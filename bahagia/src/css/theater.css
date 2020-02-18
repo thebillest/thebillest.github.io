@@ -12,43 +12,24 @@
 
 }
 
- hr.fancy-line { 
-    border: 0; 
-    height: 0.2em;
-    position: relative;
-    margin: 0.5em 0; /* Keep other elements away from pseudo elements*/
-}
-
- hr.fancy-line:after {
-    top: -0.5em;
-    height: 1em;
-}
-
- hr.fancy-line:before {
-    content: '';
-    height: 0.5em;
-    top: -0.5em;
-    z-index: 999;
-}
-
- hr.fancy-line:before, hr.fancy-line:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-}
-
- hr.fancy-line, hr.fancy-line:after {
-    background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 75%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 75%, color-stop(0%,rgba(0,0,0,0.1)), color-stop(75%,rgba(0,0,0,0)));
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
-    background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
-    background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
-    background: radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
-}
-
- body, hr.fancy-line:before {
-    background: #f4f4f4; 
-}
+hr.style18 { 
+	height: 30px; 
+	border-style: solid; 
+	border-color: #8c8b8b; 
+	border-width: 1px 0 0 0; 
+	border-radius: 20px; 
+  } 
+  
+  hr.style18:before { 
+	display: block; 
+	content: ""; 
+	height: 30px; 
+	margin-top: -31px; 
+	border-style: solid; 
+	border-color: #8c8b8b; 
+	border-width: 0 0 1px 0; 
+	border-radius: 20px; 
+  }
 
  html {
 	 font-size: 14px;
