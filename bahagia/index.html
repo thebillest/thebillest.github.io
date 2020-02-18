@@ -1,3 +1,28 @@
+<!--
+             *     ,MMM8&&&.            *
+                  MMMM88&&&&&    .
+                 MMMM88&&&&&&&
+     *           MMM88&&&&&&&&
+                 MMM88&&&&&&&&         `
+                 'MMM88&&&&&&'
+                   'MMM8&&&'      *    
+          |\___/|     /\___/\
+          )     (     )    ~(       .     '
+         =\     /=   =\~    /=
+           )===(       ) ~ (
+          /     \     /     \
+          |     |     ) ~   (
+         /       \   /     ~ \
+         \       /   \~     ~/
+  _/\_/\_/\__  _/_/\_/\__~__/_/\_/\_/\_/\_/\_
+  |  |  |  |( (  |  |  | ))  |  |  |  |  |  |
+  |  |  |  | ) ) |  |  |//|  |  |  |  |  |  |
+  |  |  |  |(_(  |  |  (( |  |  |  |  |  |  |
+  |  |  |  |  |  |  |  |\)|  |  |  |  |  |  |
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+																		 for you~
+																		  Feb '20
+-->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <!-- HEAD -->
@@ -9,46 +34,95 @@
 
         <!-- CONVERTED SCSS2CSS FOR SIMPLIFICATION -->
         <link href="https://fonts.googleapis.com/css?family=Cutive" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="src/css/fullpage.css" />
         <link rel="stylesheet" type="text/css" href="src/css/theater.css" />
+        <link rel="stylesheet" type="text/css" href="src/css/letter.css" />
     </head>
 
     <!-- BODY -->
     <body>
-      <!-- SCENE / CONVERSATION -->
-      <main class="scene">
-          <!-- DATE -->
-          <div class="actor" style="margin-bottom: 0rem;">
-              <div class="actor__prefix"></div>
-              <div id="date" class="actor__content"></div>
-          </div>
-          <hr style="margin-left: 0px; margin-bottom: 1rem; width: 300px;">
+        <!-- FULLPAGE = PAGE SECTIONS -->
+        <div id="fullpage">
+            <!-- SPLASH SECTION -->
+            <div class="section">
+              <!-- [HEY, PRETTY] LETTER -->
+              <div class ="letter">
+                <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                      <symbol id="icon-heart" viewBox="0 0 32 32">
+                          <title>heart</title>
+                          <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
+                      </symbol>
+                  </defs>
+                </svg>
+                <div class="container">
+                    <a class="envelope-wrapper js-open-envelope" href="#">
+                        <div class="envelope tossing">
+                            <div class="envelope__side envelope__side--top"></div>
+                            <div class="envelope__card">
+                              <p class="enveloper__card-text">hey, pretty <br/> </p>
+                              <p class="enveloper__card-text-small">P.S. - scroll down</p>
+                            </div>
+                            <div class="envelope__side envelope__side--right"></div>
+                            <div class="envelope__side envelope__side--left"></div>
+                            <div class="envelope__side envelope__side--bottom"></div>
+                            <svg class="heart"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use></svg>
+                        </div>
+                    </a>
+                 </div>
+               </div>
+             </div>
 
-          <!-- KIA -->
-          <div class="actor">
-            <div class="actor__prefix">K:&nbsp;</div>
-            <div id="kia" class="actor__content"></div>
-          </div>
+            <!-- THEATER SECTION -->
+            <div class="section">
+              <!-- SCENE / CONVERSATION -->
+              <main class="scene">
 
-          <!-- WILLIAM -->
-          <div class="actor">
-            <div class="actor__prefix">W:&nbsp;</div>
-            <div id="william" class="actor__content"></div>
-          </div>
+                  <!-- DATE -->
+                  <div class="actor" style="margin-bottom: 0rem;">
+                      <div class="actor__prefix"></div>
+                      <div id="date" class="actor__content"></div>
+                  </div>
+                  <hr style="margin-left: 0px; margin-bottom: 1rem; width: 300px;">
 
-          <!-- SOURCING THEATER.JS LIB & SCENE/ACTOR JS CODE (where action takes place) -->
-          <script type="text/javascript" src="src/js/theater.min.js"></script>        
-          <script type="text/javascript" src="src/js/theater.js"></script>
-          <br>
+                  <!-- KIA -->
+                  <div class="actor">
+                    <div class="actor__prefix">K:&nbsp;</div>
+                    <div id="kia" class="actor__content"></div>
+                  </div>
 
-          <!-- NOTES -->
-          <hr class="fancy-line">
-          <p>notes:</p>
-          <p>* want to reminisce? <a href="https://williamalfano.com/wnk-timeline" target="_blank">year one</a>.</p>
-          <p>* thank you <a href="https://github.com/Zhouzi/" target="_blank">@Zhouzi</a> for your awesome, open-source <a href="https://github.com/Zhouzi/TheaterJS" target="_blank">TheaterJS</a> library.</p>
-          <br>
-          <p>love always,</p>
-          <p>william</p>
-          <hr class="fancy-line">
-        </main>
-    </body>
+                  <!-- WILLIAM -->
+                  <div class="actor">
+                    <div class="actor__prefix">W:&nbsp;</div>
+                    <div id="william" class="actor__content"></div>
+                  </div>
+
+                  <!-- BREAK -->
+                  <br>
+
+                  <!-- NOTES -->
+                  <hr class="fancy-line">
+                  <p>notes:</p>
+                  <p>* want to reminisce? <a href="https://williamalfano.com/wnk-timeline" target="_blank">year one</a>.</p>
+                  <p>* thank you <a href="https://github.com/Zhouzi/" target="_blank">@Zhouzi</a> for your awesome, open-source <a href="https://github.com/Zhouzi/TheaterJS" target="_blank">TheaterJS</a> library.</p>
+                  <br>
+                  <p>love always,</p>
+                  <p>william</p>
+                  <hr class="fancy-line">
+
+               </main>
+             </div>
+         </div>
+
+         <!-- SOURCING THEATER.JS LIB & SCENE/ACTOR JS CODE (where action takes place) -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script type="text/javascript" src="src/js/theater.min.js"></script>  
+         <script type="text/javascript" src="src/js/theater.js"></script>
+         <script type="text/javascript" src="src/js/fullpage.js"></script>
+         <script type="text/javascript" src="src/js/sections.js"></script>
+         <script type="text/javascript" src="src/js/letter.js"></script>
+
+     </body>
 </html>
