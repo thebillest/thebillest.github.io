@@ -1,7 +1,7 @@
-function startTheater() {
-  // INITIAL DOC BODY COLOR
-  document.body.classList.add('dark')
+// INITIAL DOC BODY COLOR
+document.body.classList.add('dark')
 
+function startTheater() {
   // CALL THEATERJS
   var theater = theaterJS()
 
@@ -29,8 +29,8 @@ function startTheater() {
     //      william:  the dope
     //          kia:  the beaut
     //         date:  the time
-    .addActor('william', { speed: 0.8, accuracy: 1.0 })
-    .addActor('kia', { speed: 0.8, accuracy: 1.0 })
+    .addActor('william', { speed: 0.6, accuracy: 1.0 })
+    .addActor('kia', { speed: 0.6, accuracy: 1.0 })
     .addActor('date', { speed: 0.1, accuracy: 1.0 })
 
     // SCENE PROGRESSION

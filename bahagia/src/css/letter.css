@@ -1,5 +1,5 @@
 
-.container {
+.letter-container {
     width: 100%;
     height: 100%;
 }
@@ -44,7 +44,7 @@
     background-color: #f5f6d6;
 }
 
-.envelope .enveloper__card-text {
+.envelope .envelope__card-text {
     padding: 10px 20px;
     font-size: 68px;
     margin: auto;
@@ -56,10 +56,9 @@
     transform: translateY(-50%);
 }
 
-.enveloper__card-text-small {
-    padding: 10px 20px;
-    font-size: 30x;
-    margin: 0;
+.envelope .envelope__card-text-small {
+    padding: 10px 40px;
+    font-size: 28px;
     right: 0;
     color: black;
     font-family: 'Amatic SC', cursive;
