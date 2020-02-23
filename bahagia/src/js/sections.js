@@ -2,10 +2,10 @@ var myFullpage = new fullpage('#fullpage', {
 	//Navigation
 	menu: '#menu',
 	lockAnchors: false,
-	anchors:['firstPage', 'secondPage', 'thirdPage'],
+	anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
 	navigation: false,
 	navigationPosition: 'right',
-	navigationTooltips: ['firstSlide', 'secondSlide', 'thirdSlide'],
+	navigationTooltips: ['firstSlide', 'secondSlide', 'thirdSlide', 'fourthSlide'],
 	showActiveTooltip: false,
 	slidesNavigation: false,
 	slidesNavPosition: 'bottom',
@@ -45,7 +45,7 @@ var myFullpage = new fullpage('#fullpage', {
 	//Design
 	controlArrows: true,
 	verticalCentered: true,
-	sectionsColor : ['#ffd17c','','#60a65a'],
+	sectionsColor : ['#ffd17c','','#60a65a', '#7D003E'],
 	paddingTop: '3em',
 	paddingBottom: '10px',
 	fixedElements: '#header, .footer',

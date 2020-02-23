@@ -38,13 +38,11 @@ ul#lines {
 }
 
 ul#lines li {
-	height:28px;
-	line-height:28px;
 	color:#4d84c8;
 	font-family:Georgia;
 	font-style:italic;
 	font-size:25px;
-	width:338px;
+	width:100%;
 	border-top:1px solid #f2f0df;
 	padding-left:25px;
 }

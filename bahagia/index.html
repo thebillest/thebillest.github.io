@@ -42,6 +42,7 @@
         <link rel="stylesheet" type="text/css" href="src/css/letter.css" />
         <link rel="stylesheet" type="text/css" href="src/css/stickynote.css" />
         <link rel="stylesheet" type="text/css" href="src/css/player.css" />
+        <link rel="stylesheet" type="text/css" href="src/css/video-js.css" />
     </head>
 
     <!-- BODY -->
@@ -91,10 +92,10 @@
               <!-- SCENE / CONVERSATION -->
               <main class="scene">
 
-                  <!-- THEATER PLAYER -->
-                      <a id="play-theater" class="theater-play-button" href="#">
-                          <span></span>
-                      </a>
+                  <!-- THEATER PLAYER / PLAY BUTTON -->
+                      <div id="play-theater" class="play-button">
+                        <div></div>
+                      </div>
 
                   <!-- OUR STORY -->
                   <div id="actors" class="hidden">
@@ -124,7 +125,6 @@
                       <div id="william" class="actor__content"></div>
                     </div>
                 </div>
-
                </main>
              </div>
 
@@ -139,11 +139,13 @@
                       <!-- STICKY NOTE MESSAGE -->
                       <ul id="lines">
                         <li></li>
-                        <li>celebrating two years of us!</li><br>
+                        <li></li>
+                        <li><br></li>
                         <li>love always,</li>
                         <li>william</li>
-                        <li></li>
-                        <li></li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
                       </ul>
                       <div class="left-shadow"></div>
                       <div class="right-shadow"></div>
@@ -154,14 +156,20 @@
                   <div id="banner-section">
                       <div class="banner-content">
                         <p class="banner-text">
-                            other stuffs:<br>
+                            <center>happy two years <3</center><br></br>
                             * want to reminisce? <a href="https://williamalfano.com/wnk-timeline" target="_blank">year one</a>.</br>
                             * thank you <a href="https://github.com/Zhouzi/" target="_blank">@Zhouzi</a> for your awesome, open-source <a href="https://github.com/Zhouzi/TheaterJS/" target="_blank">TheaterJS</a> library.<br>
                             * big ups to <a href="https://github.com/AlvaroTrigo/" target="_blank">@Alvaro Trigo</a> for the cool <a href="https://github.com/AlvaroTrigo/fullpage.js/" target="_blank">fullPage.JS</a> plugin.<br>
                         </p>
                       </div>
+                  </div>                  
+             </div>
+             <div class="section">
+                <div class="egg">
+                  <div class="question">
+                    ?
                   </div>
-                  
+                </div>
              </div>
          </div>
 
@@ -173,6 +181,7 @@
          <script type="text/javascript" src="src/js/sections.js"></script>
          <script type="text/javascript" src="src/js/letter.js"></script>
          <script type="text/javascript" src="src/js/player.js"></script>
+         <script type="text/javascript" src="src/js/video.js"></script>
 
      </body>
 </html>

@@ -45,16 +45,16 @@
 }
 
 .envelope .envelope__card-text {
-    padding: 10px 20px;
-    font-size: 68px;
-    margin: auto;
+    font-size: 70px;
     color: black;
     font-family: 'Nothing You Could Do', cursive;
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    left: 55%;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .envelope .envelope__card-text-small {
@@ -87,13 +87,13 @@
 
 .envelope .envelope__side--left {
     left: 0;
-    border-width: 150px 0 150px 225px;
+    border-width: 152px 0 152px 227px;
     border-color: transparent transparent transparent #ffffff;
 }
 
 .envelope .envelope__side--right {
     right: 0;
-    border-width: 150px 225px 150px 0;
+    border-width: 152px 227px 152px 0;
     border-color: transparent #ffffff transparent transparent;
 }
 
@@ -101,7 +101,7 @@
     top: auto;
     left: 0;
     bottom: 0;
-    border-width: 0 225px 150px 225px;
+    border-width: 0 227px 152px 227px;
     border-color: transparent transparent #ecf0f1 transparent;
 }
 
@@ -109,14 +109,14 @@
     top: 0;
     left: 0;
     bottom: auto;
-    border-width: 150px 225px 0 225px;
+    border-width: 152px 227px 0 227px;
     border-color: #ecf0f1 transparent transparent transparent;
     z-index: 1;
 }
 
 .envelope.open > .envelope__side--top {
     top: -150px;
-    border-width: 0 225px 150px 225px;
+    border-width: 0 227px 152px 227px;
     border-color: transparent transparent #C9D0D2 transparent;
 }
 
