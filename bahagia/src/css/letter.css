@@ -52,13 +52,14 @@
     font-family: 'Nothing You Could Do', cursive;
     position: absolute;
     top: 50%;
+    -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
 .envelope .envelope__card-text-small {
     padding: 10px 40px;
-    font-size: 28px;
+    font-size: 32px;
     right: 0;
     color: black;
     font-family: 'Amatic SC', cursive;
