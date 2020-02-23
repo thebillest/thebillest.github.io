@@ -51,7 +51,10 @@ ul#lines li {
 
 .tape{
 	position:absolute;
-	top:-20px; right:120px;
+	top:-20px;
+	left: 0;
+	right: 0;
+	margin: auto;
 	width: 195px;
 	height: 53px;
 	background-color:#fff;
