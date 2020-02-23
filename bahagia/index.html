@@ -41,6 +41,7 @@
         <link rel="stylesheet" type="text/css" href="src/css/theater.css" />
         <link rel="stylesheet" type="text/css" href="src/css/letter.css" />
         <link rel="stylesheet" type="text/css" href="src/css/stickynote.css" />
+        <link rel="stylesheet" type="text/css" href="src/css/player.css" />
     </head>
 
     <!-- BODY -->
@@ -90,32 +91,39 @@
               <!-- SCENE / CONVERSATION -->
               <main class="scene">
 
+                  <!-- THEATER PLAYER -->
+                      <a id="play-theater" class="theater-play-button" href="#">
+                          <span></span>
+                      </a>
+
                   <!-- OUR STORY -->
-                  <center>
-                  <div class="actor">
-                      <div class="actor__prefix"></div>
-                      <div id="story" class="actor__content"></div>
-                  </div>
-                  </center>
+                  <div id="actors" class="hidden">
+                    <center>
+                      <div class="actor">
+                          <div class="actor__prefix"></div>
+                          <div id="story" class="actor__content"></div>
+                      </div>
+                    </center>
 
-                  <!-- DATE -->
-                  <div class="actor" style="margin-bottom: 0rem;">
-                      <div class="actor__prefix"></div>
-                      <div id="date" class="actor__content"></div>
-                  </div>
-                  <hr style="margin-left: 0px; margin-bottom: 1rem; width: 300px;">
+                    <!-- DATE -->
+                    <div class="actor" style="margin-bottom: 0rem;">
+                        <div class="actor__prefix"></div>
+                        <div id="date" class="actor__content"></div>
+                    </div>
+                    <hr style="margin-left: 0px; margin-bottom: 1rem; width: 300px;">
 
-                  <!-- KIA -->
-                  <div class="actor">
-                    <div class="actor__prefix">K:&nbsp;</div>
-                    <div id="kia" class="actor__content"></div>
-                  </div>
+                    <!-- KIA -->
+                    <div class="actor">
+                      <div class="actor__prefix">K:&nbsp;</div>
+                      <div id="kia" class="actor__content"></div>
+                    </div>
 
-                  <!-- WILLIAM -->
-                  <div class="actor">
-                    <div class="actor__prefix">W:&nbsp;</div>
-                    <div id="william" class="actor__content"></div>
-                  </div>
+                    <!-- WILLIAM -->
+                    <div class="actor">
+                      <div class="actor__prefix">W:&nbsp;</div>
+                      <div id="william" class="actor__content"></div>
+                    </div>
+                </div>
 
                </main>
              </div>
@@ -164,6 +172,7 @@
          <script type="text/javascript" src="src/js/fullpage.js"></script>
          <script type="text/javascript" src="src/js/sections.js"></script>
          <script type="text/javascript" src="src/js/letter.js"></script>
+         <script type="text/javascript" src="src/js/player.js"></script>
 
      </body>
 </html>

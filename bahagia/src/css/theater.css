@@ -11,6 +11,10 @@
 	 border: 1px solid;
  }
 
+ .hidden {
+	 display: none;
+ }
+
  .banner-content {
 	background: #000;
 	width: 100%;
@@ -23,6 +27,18 @@
 	margin-left:4px;
 	color: #FFFFFF;
 	font-size: 150%;
+ }
+
+ .theater-player {
+	background: #000;
+	width: 100%;
+	height: 60%;
+	margin: 0;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	position: absolute;
  }
 
  html {
