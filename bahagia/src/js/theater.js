@@ -29,11 +29,13 @@ function startTheater() {
     //      william:  the dope
     //          kia:  the beaut
     //         date:  the time
-    .addActor('william', { speed: 0.6, accuracy: 1.0 })
+    .addActor('story', { speed: 0.05, accuracy: 1.0 })
+    .addActor('date', { speed: 0.2, accuracy: 1.0 })
     .addActor('kia', { speed: 0.6, accuracy: 1.0 })
-    .addActor('date', { speed: 0.1, accuracy: 1.0 })
+    .addActor('william', { speed: 0.6, accuracy: 1.0 })
 
     // SCENE PROGRESSION
+    .addScene('story:a snippet of our 2019.')
     .addScene('date:Jan 1, 2019')
     .addScene('william:Kia.', 600)
     .addScene('kia:What?', 400)

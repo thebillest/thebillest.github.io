@@ -72,9 +72,10 @@
 }
 
  .scene {
-	 padding: 6rem 2rem;
-	 max-width: 800px;
-	 margin: 0 auto;
+     max-width: 100%;
+ 	 left: 0;
+	 right: 0;
+	 margin: auto;
 }
 
  .actor {
