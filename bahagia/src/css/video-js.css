@@ -792,6 +792,7 @@ easily in the skin designer. http://designer.videojs.com/
 
 .question {
   height: 100%;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
