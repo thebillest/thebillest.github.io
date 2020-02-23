@@ -39,6 +39,7 @@
     background: #fff;
     border-radius: 50%;
     transition: all 200ms;
+    -webkit-transition: all 200ms;
 }
 .theater-play-button:hover:after {
     background-color: #fff;
