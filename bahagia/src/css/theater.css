@@ -61,10 +61,6 @@
 	 border-bottom: 1px solid;
 }
 
- a:focus, a:hover {
-	 box-shadow: inset 0 -8px 0 #c92b2b;
-}
-
  p {
 	 opacity: 0.6;
 	 margin: 0 0 0.6rem 0;
