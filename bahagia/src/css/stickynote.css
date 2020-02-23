@@ -1,20 +1,21 @@
 .sticky-note-container {
-	width:400px;
-	margin:0 auto;
-	padding-top:200px;
+	margin: auto;
 }
+
 .paper {
-    position:relative;
+	position: absolute;
+	left: 0;
+	right: 0;
     margin: auto;
-    top: -120px;
-	width: 450px;
-	height: 375px;
+    top: 10%;
+	width: 40%;
+	height: 50%;
 	background-color: #faf8e5;
 	border: 1px solid  #e3e3e3;
 }
 
 .red-line {
-	height:375px;
+	height:100%;
 	width:1px;
 	background-color:#ef8b8b;
 	float:left;
