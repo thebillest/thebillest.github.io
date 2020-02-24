@@ -20,6 +20,8 @@ function startTheater() {
         document.body.classList.replace(document.body.classList.item(0), 'herFav')
       } else if (theater.getCurrentActor().name === 'william'){
         document.body.classList.replace(document.body.classList.item(0), 'hisFav')
+      } else if (theater.getCurrentActor().name === 'story'){
+        document.body.classList.replace(document.body.classList.item(0), 'dark')
       }
     })
 
@@ -29,43 +31,24 @@ function startTheater() {
     //      william:  the dope
     //          kia:  the beaut
     //         date:  the time
-    .addActor('story', { speed: 0.05, accuracy: 1.0 })
+    //        story:  the recap
+    .addActor('story', { speed: 0.02, accuracy: 1.0 })
     .addActor('date', { speed: 0.2, accuracy: 1.0 })
     .addActor('kia', { speed: 0.6, accuracy: 1.0 })
     .addActor('william', { speed: 0.6, accuracy: 1.0 })
 
     // SCENE PROGRESSION
-    .addScene('story:a snippet of our 2019.')
+    .addScene('story:snippets from year two.')
     .addScene('date:Jan 1, 2019')
     .addScene('william:Kia.', 600)
     .addScene('kia:What?', 400)
-    .addScene('william:I am your father.', 400)
-    .addScene('kia:Nooo...', -3, '!!! ', 600, 'No! ', 600)
-    .addScene('kia:That\'s not true!', 600)
-    .addScene('kia:That\'s impossible!', 400)
-    .addScene('date:Feb 10, 2019')
-    .addScene('william:Search your feelings.', 1600)
-    .addScene('william:You know it to be true.', 1000)
-    .addScene('kia:Noooooooo! ', 600, 'No!', 400)
-    .addScene('william:Kia.', 600)
-    .addScene('date:Aug 5, 2019')
-    .addScene('william:You can destroy the Emperor.', 1600)
-    .addScene('william:He has foreseen this. ', 800)
-    .addScene('william:It is your destiny.', 1600)
-    .addScene('william:Join me.', 800)
-    .addScene('william:Together we can rule the galaxy.', 800)
-    .addScene('william:As father and son.', 1600)
-    .addScene('william:Come with me. ', 800)
-    .addScene('william:It is the only way.', 2000)
+
+    // THE END
+    .addScene('kia:<3', 600)
+    .addScene('william:<3', 400)
+    .addScene('date:fin.')
+    .addScene('story:reliving our second year in 3...', -4, '2...', -4, '1...')
 
     // RELIVE IT
     .addScene(theater.replay.bind(theater))
-}
-
-function setTheaterStatus(value) {
-  theaterStatus = value;
-}
-
-function getTheaterStatus() {
-  return theaterStatus;
 }
