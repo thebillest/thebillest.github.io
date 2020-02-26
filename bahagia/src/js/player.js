@@ -15,13 +15,13 @@ $('#play-theater').one('click', function(e){
              // Fade in the actors
              setTimeout(function () {
                   $('#actors_story').fadeIn('slow');
-             }.bind(this), 6500)
+             }.bind2(this), 6500)
        });
     });
 });
 
 // iOS Fix
-Function.prototype.bind = function(parent) {
+Function.prototype.bind2 = function(parent) {
       var f = this;
       var args = [];
   
