@@ -7,10 +7,15 @@ $('#play-theater').one('click', function(e){
        // Remove play div
        $(this).remove();
 
-       // Show actors
-       $('#actors').fadeIn('slow', function () {
+       // Show title and svg
+       $('#title_story').fadeIn('slow', function () {
              // Call to theater.js AFTER fadeIn finishes
              startTheater();
+             
+             // Fade in the actors
+             setTimeout(function () {
+                  $('#actors_story').fadeIn('slow');
+             }, 6500)
        });
     });
 });

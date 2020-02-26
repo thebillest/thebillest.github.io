@@ -33,7 +33,7 @@ function startTheater() {
     //         date:  the time
     //        story:  the recap
     .addActor('story', { speed: 0.02, accuracy: 1.0 })
-    .addActor('date', { speed: 0.2, accuracy: 1.0 })
+    .addActor('date', { speed: 0.05, accuracy: 1.0 })
     .addActor('kia', { speed: 0.6, accuracy: 1.0 })
     .addActor('william', { speed: 0.6, accuracy: 1.0 })
 
@@ -53,6 +53,7 @@ function startTheater() {
     .addScene(theater.replay.bind(theater))
 }
 
+// Hijab Mode!
 $("#us").click(function(){
   var imgSrc = $('#us').attr('src');
   if (imgSrc == 'src/etc/WnK_t.svg') {
