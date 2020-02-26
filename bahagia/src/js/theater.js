@@ -52,3 +52,12 @@ function startTheater() {
     // RELIVE IT
     .addScene(theater.replay.bind(theater))
 }
+
+$("#us").click(function(){
+  var imgSrc = $('#us').attr('src');
+  if (imgSrc == 'src/etc/WnK_t.svg') {
+    $('#us').attr('src', 'src/etc/WnKwh_t.svg');
+  } else {
+    $('#us').attr('src', 'src/etc/WnK_t.svg');
+  }
+});
