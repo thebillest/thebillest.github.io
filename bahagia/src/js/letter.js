@@ -1,4 +1,5 @@
 var heartClicked = 0;
+var questionClicked = 0;
 $('.js-open-envelope').on('click', function (event) {
     event.preventDefault();
     var $self = $(this);
