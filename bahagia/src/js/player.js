@@ -15,7 +15,7 @@ $('#play-theater').one('click', function(e){
              // Fade in the actors
              setTimeout(function () {
                   $('#actors_story').fadeIn('slow');
-             }.bind2(this), 6500)
+             }.bind2(this), 5000)
        });
     });
 });
