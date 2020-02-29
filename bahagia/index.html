@@ -43,6 +43,7 @@
         <link rel="stylesheet" type="text/css" href="src/css/stickynote.css" />
         <link rel="stylesheet" type="text/css" href="src/css/player.css" />
         <link rel="stylesheet" type="text/css" href="src/css/video-js.css" />
+        <link rel="stylesheet" type="text/css" href="src/css/selector.css" />
     </head>
 
     <!-- BODY -->
@@ -104,6 +105,27 @@
                       <div class="actor" style="margin-bottom: 1rem;">
                           <div class="actor__prefix"></div>
                           <div id="story" class="actor__content"></div>
+                      </div>
+                    </center>
+
+                    <!-- SCENE SELECTOR -->
+                    <center>
+                      <div id="selector" class="hidden">
+                        <div class="select">
+                            <select name="slct" id="slct" onchange="prepareScene()">
+                              <option selected disabled>Relive a moment</option>
+                              <option value="1">A Year Ago...</option>
+                              <option value="2">A Not-So-Silent Movie</option>
+                              <option value="3">The Cherry On Top</option>
+                              <option value="4">Rice Water Hair?</option>
+                              <option value="5">Sleepy Bus Rides</option>
+                              <option value="6">An Extra Week Can't Hurt'</option>
+                              <option value="7">Cutie In The Pics</option>
+                              <option value="8">The Update Drill</option>
+                              <option value="9">The Study Of Droology</option>
+                              <option value="10">Hug Per Credit Ratio</option>
+                            </select>
+                        </div>
                       </div>
                     </center>
 

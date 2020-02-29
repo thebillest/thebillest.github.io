@@ -14,14 +14,14 @@ $('#play-theater').one('click', function(e){
              
              // Fade in the actors
              setTimeout(function () {
-                  $('#actors_story').fadeIn('slow');
-             }.bind2(this), 5000)
+                  $('#selector').fadeIn('slow');
+             }.binder(this), 5000)
        });
     });
 });
 
 // iOS Fix
-Function.prototype.bind2 = function(parent) {
+Function.prototype.binder = function(parent) {
       var f = this;
       var args = [];
   
