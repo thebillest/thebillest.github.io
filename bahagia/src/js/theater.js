@@ -42,22 +42,27 @@ function startTheater() {
 }
 
 function prepareScene() {
-  $("#selector").fadeOut(800);
-  $("#actors_story").fadeIn(800);
-  
-  var selectBox = document.getElementById("slct");
-  var selectedValue = selectBox.options[selectBox.selectedIndex].value;
-
-  playScene(selectedValue);
-
-  resetSelector();
+  $("#selector").fadeOut(800, function() {
+    $("#actors_story").fadeIn(800, function() {
+      var selectBox = document.getElementById("slct");
+      var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+    
+      playScene(selectedValue);
+    
+      resetSelector();
+    });
+  });
 }
 
 function resetSelector() {
   if (theater.status != "playing") {
-    $("#actors_story").fadeOut(400);
-    $("#selector").fadeIn(400);
     document.body.classList.replace(document.body.classList.item(0), 'dark')
+    $("#actors_story").fadeOut(800, function () {
+      $("#selector").fadeIn(800)
+      stop = true;
+    });
+  }
+  if (stop == true) {
     return;
   }
   setTimeout(resetSelector, 1000);
