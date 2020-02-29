@@ -59,13 +59,10 @@ function resetSelector() {
     document.body.classList.replace(document.body.classList.item(0), 'dark')
     $("#actors_story").fadeOut(800, function () {
       $("#selector").fadeIn(800)
-      stop = true;
+      clearTimeout(timeout);
     });
   }
-  if (stop == true) {
-    return;
-  }
-  setTimeout(resetSelector, 1000);
+  timeout = setTimeout(resetSelector, 1000);
 }
 
 function playScene(num) {
