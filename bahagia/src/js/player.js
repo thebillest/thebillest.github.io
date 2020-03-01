@@ -8,6 +8,7 @@ $('#play-theater').one('click', function(e){
        $(this).remove();
 
        // Show title and svg
+       $('#us').fadeIn('slow');
        $('#title_story').fadeIn('slow', function () {
              // Call to theater.js AFTER fadeIn finishes
              startTheater();

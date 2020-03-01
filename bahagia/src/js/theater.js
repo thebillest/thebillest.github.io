@@ -42,24 +42,100 @@ function startTheater() {
 }
 
 function prepareScene() {
+  $("#title_story").fadeOut(800);
   $("#selector").fadeOut(800, function() {
+    $("#progressbar").fadeIn(800);
     $("#actors_story").fadeIn(800, function() {
       var selectBox = document.getElementById("slct");
       var selectedValue = selectBox.options[selectBox.selectedIndex].value;
     
-      playScene(selectedValue);
+      var sceneNum = playScene(selectedValue);
+
+      loadBar(sceneNum);
     
       resetSelector();
     });
   });
 }
 
+currentSubScene = 0;
+previousScene = 'Start';
+subscene = 0;
+function loadBar(sceneNum) {
+  switch(sceneNum) {
+    case "1":
+      subScenes = 39
+      break;
+    case "2":
+      subScenes = 30
+      break;
+    case "3":
+      subScenes = 12
+      break;
+    case "4":
+      subScenes = 13
+      break;
+    case "5":
+      subScenes = 8
+      break;
+    case "6":
+      subScenes = 12
+      break;
+    case "7":
+      subScenes = 12
+      break;
+    case "8":
+      subScenes = 5
+      break;
+    case "9":
+      subScenes = 8
+      break;
+    case "10":
+      subScenes = 7
+      break;
+  }
+
+  currentSpeech = theater.getCurrentSpeech();
+  if ( previousScene !=  currentSpeech && (currentSpeech != 1200) && (currentSpeech != null) ) {
+    previousScene = currentSpeech;
+    currentSubScene = currentSubScene + 1;
+    animatePercentage = (currentSubScene/subScenes)*100;
+    $('#progressbar').LineProgressbar({
+      ShowProgressCount: true,
+      percentage: animatePercentage,
+      fillBackgroundColor: '#ffffff',
+      backgroundColor: '#222222',
+      width: '35%'
+    }); 
+  }
+
+  if (theater.status != "playing") {
+    $('#progressbar').LineProgressbar({
+      ShowProgressCount: true,
+      percentage: 100,
+      fillBackgroundColor: '#ffffff',
+      backgroundColor: '#222222',
+      width: '35%'
+    }); 
+    clearTimeout(loadTime);
+  }
+  loadTime = setTimeout(loadBar, 100);
+}
+
 function resetSelector() {
   if (theater.status != "playing") {
     document.body.classList.replace(document.body.classList.item(0), 'dark')
+    $("#progressbar").fadeOut(800);
     $("#actors_story").fadeOut(800, function () {
       $("#selector").fadeIn(800)
       clearTimeout(timeout);
+      $('#progressbar').LineProgressbar({
+        ShowProgressCount: true,
+        percentage: 0,
+        fillBackgroundColor: '#ffffff',
+        backgroundColor: '#222222',
+        width: '35%'
+      }); 
     });
   }
   timeout = setTimeout(resetSelector, 1000);
@@ -258,6 +334,7 @@ function playScene(num) {
     .addScene('scene:')
     .addScene('william:')
     .addScene('kia:')
+  return num;
 }
 
 // Hijab Mode!

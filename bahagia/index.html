@@ -29,14 +29,19 @@
     <!-- HEAD -->
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <!-- iOS DROPDOWN FIX -->
         <meta name="viewport" content="user-scalable=no">
+
         <!-- TITLE -->
         <title>year two.</title>
 
-        <!-- CONVERTED SCSS2CSS FOR SIMPLIFICATION -->
+        <!-- FONTS -->
         <link href="https://fonts.googleapis.com/css?family=Cutive" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+
+        <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="src/css/fullpage.css" />
         <link rel="stylesheet" type="text/css" href="src/css/theater.css" />
         <link rel="stylesheet" type="text/css" href="src/css/letter.css" />
@@ -44,6 +49,7 @@
         <link rel="stylesheet" type="text/css" href="src/css/player.css" />
         <link rel="stylesheet" type="text/css" href="src/css/video-js.css" />
         <link rel="stylesheet" type="text/css" href="src/css/selector.css" />
+        <link rel="stylesheet" type="text/css" href="src/css/jquery.lineProgressbar.css" />
     </head>
 
     <!-- BODY -->
@@ -98,14 +104,23 @@
                     <div></div>
                   </div>
 
+                  <center>
+                    <img id="us" class="hidden" src="src/etc/WnK_t.svg" style="width:225px;"></img>
+                  </center>
+
                   <!-- OUR STORY -->
-                  <div id="title_story" class="hidden">
+                  <div id="ourScene">
                     <center>
-                      <img id="us" src="src/etc/WnK_t.svg" style="width:225px;"></img>
-                      <div class="actor" style="margin-bottom: 1rem;">
-                          <div class="actor__prefix"></div>
-                          <div id="story" class="actor__content"></div>
+                      <div id="title_story" class="hidden">
+                        <div class="actor" style="margin-bottom: 1rem;">
+                            <div class="actor__prefix"></div>
+                            <div id="story" class="actor__content"></div>
+                        </div>
                       </div>
+                    </center>
+
+                    <center>
+                        <div id="progressbar" class="hidden"></div>
                     </center>
 
                     <!-- SCENE SELECTOR -->
@@ -129,7 +144,7 @@
                       </div>
                     </center>
 
-                    <!-- DATE -->
+                    <!-- SCENE -->
                     <div id="actors_story" class="hidden">
                       <div class="actor" style="margin-bottom: 0rem;">
                           <div class="actor__prefix"></div>
@@ -192,6 +207,8 @@
                       </div>
                   </div>                  
              </div>
+
+             <!-- SECRET -->
              <div class="section">
                 <div class="egg">
                   <div class="question">
@@ -212,6 +229,6 @@
          <script type="text/javascript" src="src/js/letter.js"></script>
          <script type="text/javascript" src="src/js/player.js"></script>
          <script type="text/javascript" src="src/js/video.js"></script>
-
+         <script type="text/javascript" src="src/js/jquery.lineProgressbar.js"></script>
      </body>
 </html>
