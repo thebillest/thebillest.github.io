@@ -129,6 +129,9 @@ function resetSelector() {
         width: '35%'
       }); 
     });
+    currentSubScene = 0;
+    previousScene = 'Start';
+    subscene = 0;
     return;
   }
   timeout = setTimeout(resetSelector, 1000);
