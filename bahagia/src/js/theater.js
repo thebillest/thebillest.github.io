@@ -96,7 +96,7 @@ function loadBar(sceneNum) {
   }
 
   currentSpeech = theater.getCurrentSpeech();
-  if ( previousScene !=  currentSpeech && (currentSpeech != 1200) && (currentSpeech != null) ) {
+  if ( previousScene !=  currentSpeech && (currentSpeech != 1200) && (currentSpeech != null) && (currentSpeech != "sequence:end") ) {
     previousScene = currentSpeech;
     currentSubScene = currentSubScene + 1;
     animatePercentage = (currentSubScene/subScenes)*100;
@@ -110,14 +110,7 @@ function loadBar(sceneNum) {
   }
 
   if (theater.status != "playing") {
-    $('#progressbar').LineProgressbar({
-      ShowProgressCount: true,
-      percentage: 100,
-      fillBackgroundColor: '#ffffff',
-      backgroundColor: '#222222',
-      width: '35%'
-    }); 
-    clearTimeout(loadTime);
+    return;
   }
   loadTime = setTimeout(loadBar, 100);
 }
@@ -128,7 +121,6 @@ function resetSelector() {
     $("#progressbar").fadeOut(800);
     $("#actors_story").fadeOut(800, function () {
       $("#selector").fadeIn(800)
-      clearTimeout(timeout);
       $('#progressbar').LineProgressbar({
         ShowProgressCount: true,
         percentage: 0,
@@ -137,6 +129,7 @@ function resetSelector() {
         width: '35%'
       }); 
     });
+    return;
   }
   timeout = setTimeout(resetSelector, 1000);
 }
